@@ -1325,6 +1325,7 @@ bool drawObjects()
                                     [_scenario vehi_spawns][index].coord[1] = gg[1];
                                     [_scenario vehi_spawns][index].coord[2] = gg[2];
                                 }
+                                free(gg);
                                 break;
                             }
                             case s_scenery:
@@ -1336,6 +1337,7 @@ bool drawObjects()
                                     [_scenario scen_spawns][index].coord[1] = gg[1];
                                     [_scenario scen_spawns][index].coord[2] = gg[2];
                                 }
+                                free(gg);
                                 break;
                             }
                             case s_playerspawn:
@@ -1347,6 +1349,7 @@ bool drawObjects()
                                     [_scenario spawns][index].coord[1] = gg[1];
                                     [_scenario spawns][index].coord[2] = gg[2];
                                 }
+                                free(gg);
                                 break;
                             }
                             case s_netgame:
@@ -1358,6 +1361,7 @@ bool drawObjects()
                                     [_scenario netgame_flags][index].coord[1] = gg[1];
                                     [_scenario netgame_flags][index].coord[2] = gg[2];
                                 }
+                                free(gg);
                                 break;
                             }
                             case s_item:
@@ -1369,6 +1373,7 @@ bool drawObjects()
                                     [_scenario item_spawns][index].coord[1] = gg[1];
                                     [_scenario item_spawns][index].coord[2] = gg[2];
                                 }
+                                free(gg);
                                 break;
                             }
                             case s_machine:
@@ -1380,6 +1385,7 @@ bool drawObjects()
                                     [_scenario mach_spawns][index].coord[1] = gg[1];
                                     [_scenario mach_spawns][index].coord[2] = gg[2];
                                 }
+                                free(gg);
                                 break;
                             }
                         }
@@ -1405,6 +1411,7 @@ bool drawObjects()
             _camera.position[1] = gg[1];
             _camera.position[2] = gg[2]+0.65;
         }
+        free(gg);
     }
    
 	if (key_is_down)
@@ -1546,7 +1553,7 @@ bool drawObjects()
         gluQuadricTexture( sphere, GL_TRUE);
         
         gluSphere(sphere,0.5,5,5);
-        
+        gluDeleteQuadric ( sphere );
         glPopMatrix();
         
         
@@ -3046,7 +3053,7 @@ if (drawObjects())
         gluQuadricOrientation( sphere, GLU_OUTSIDE);
 
         gluSphere(sphere,0.1,5,5);
-        
+        gluDeleteQuadric ( sphere );
         glPopMatrix();
         return;
     }
@@ -3215,7 +3222,7 @@ if (drawObjects())
     gluQuadricTexture( sphere, GL_TRUE);
     
     gluSphere(sphere,0.01,5,5);
-    
+    gluDeleteQuadric ( sphere );
     glPopMatrix();
     
     return;
@@ -4475,6 +4482,9 @@ int check_intersect_tri(fpoint pt1, fpoint pt2, fpoint pt3, fpoint linept, fpoin
                     float dist = (float)sqrt(powf(pos[0] - pt_int->x,2) + powf(pos[1] - pt_int->y, 2) + powf(pos[2] - pt_int->z, 2));
                     if (dist < closestDistance)
                     {
+                        if (found)
+                            free(closest);
+                        
                         closestDistance = dist;
                         
                         //Inside triangle
@@ -4488,6 +4498,8 @@ int check_intersect_tri(fpoint pt1, fpoint pt2, fpoint pt3, fpoint linept, fpoin
                     }
                 }
             }
+            
+            free(pt_int);
               
              
         }
@@ -4508,11 +4520,13 @@ int check_intersect_tri(fpoint pt1, fpoint pt2, fpoint pt3, fpoint linept, fpoin
 
 -(NSNumber*)isAboveGround:(float*)pos
 {
-    
     float *gg = [self coordtoGround:pos];
-    
     if (pos[2] >= (gg[2]-0.00001))
+    {
+        free(gg);
         return [NSNumber numberWithBool:TRUE];
+    }
+    free(gg);
     return [NSNumber numberWithBool:FALSE];
 }
 

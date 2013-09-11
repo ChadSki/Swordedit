@@ -250,6 +250,8 @@
         gluQuadricTexture( sphere, GL_TRUE);
         
         gluSphere(sphere,0.05,5,5);
+        gluDeleteQuadric ( sphere );
+        
         glDisable(GL_BLEND);
         
         

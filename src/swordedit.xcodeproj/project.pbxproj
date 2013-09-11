@@ -10,8 +10,6 @@
 		1406E43B10F921C3004A983D /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1406E43A10F921C3004A983D /* Utility.m */; };
 		1406E51610F93B28004A983D /* Selection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1406E51510F93B28004A983D /* Selection.m */; };
 		1406E5A510F93FBB004A983D /* SelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1406E5A410F93FBB004A983D /* SelectView.m */; };
-		142F1A0910F8765100E69B8D /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142F1A0810F8765100E69B8D /* BGHUDAppKit.framework */; };
-		142F1A2F10F8765A00E69B8D /* BGHUDAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 142F1A0810F8765100E69B8D /* BGHUDAppKit.framework */; };
 		143B86B712A24D3B0092D35E /* scenery.seo in Resources */ = {isa = PBXBuildFile; fileRef = 143B86B612A24D3B0092D35E /* scenery.seo */; };
 		143B86EA12A25A0A0092D35E /* machine.seo in Resources */ = {isa = PBXBuildFile; fileRef = 143B86E912A25A0A0092D35E /* machine.seo */; };
 		144893AD10FA90130026A004 /* relaunch in Resources */ = {isa = PBXBuildFile; fileRef = 144893AC10FA90130026A004 /* relaunch */; };
@@ -42,13 +40,12 @@
 		5CE019150DD7D392007AA956 /* ModelTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE019140DD7D392007AA956 /* ModelTag.m */; };
 		5CE019550DD7D9B1007AA956 /* Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE019540DD7D9B1007AA956 /* Geometry.m */; };
 		5CEA8D2D0CCC23A100B5636E /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA8D2C0CCC23A100B5636E /* AppController.m */; };
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		77DC40A717AE1510000626A2 /* squish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DC40A617AE1510000626A2 /* squish.framework */; };
+		77DC40A817AE152E000626A2 /* squish.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 77DC40A617AE1510000626A2 /* squish.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		AD79512F1763266E0029CCFE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD79512E1763266E0029CCFE /* Security.framework */; };
-		AD795131176326910029CCFE /* squish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD795130176326910029CCFE /* squish.framework */; };
-		AD795132176326A10029CCFE /* squish.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = AD795130176326910029CCFE /* squish.framework */; };
 		AD9CA5BA176D8E03004B109A /* NonKeyPanels.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9CA5B9176D8E03004B109A /* NonKeyPanels.m */; };
 		ADD558011765866D0023C115 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD558001765866D0023C115 /* Main.xib */; };
 		ADE09D77176C0CDD007B74E3 /* player_spawn_blue.seo in Resources */ = {isa = PBXBuildFile; fileRef = ADE09D73176C0CDD007B74E3 /* player_spawn_blue.seo */; };
@@ -73,8 +70,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				142F1A2F10F8765A00E69B8D /* BGHUDAppKit.framework in Copy Frameworks */,
-				AD795132176326A10029CCFE /* squish.framework in Copy Frameworks */,
+				77DC40A817AE152E000626A2 /* squish.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,13 +88,11 @@
 		1406E5A310F93FBB004A983D /* SelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectView.h; sourceTree = "<group>"; };
 		1406E5A410F93FBB004A983D /* SelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectView.m; sourceTree = "<group>"; };
 		142F19C110F8722100E69B8D /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
-		142F1A0810F8765100E69B8D /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
 		143B86B612A24D3B0092D35E /* scenery.seo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = scenery.seo; sourceTree = "<group>"; };
 		143B86E912A25A0A0092D35E /* machine.seo */ = {isa = PBXFileReference; lastKnownFileType = file; path = machine.seo; sourceTree = "<group>"; };
 		144893AC10FA90130026A004 /* relaunch */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = relaunch; sourceTree = "<group>"; };
 		1448949410FAAAE30026A004 /* swordedit.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = swordedit.icns; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* swordedit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swordedit_Prefix.pch; sourceTree = "<group>"; };
@@ -155,10 +149,10 @@
 		5CEC796E0DE2395E00C33BFB /* VectorMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorMath.h; sourceTree = "<group>"; };
 		5CEC79AE0DE23A6E00C33BFB /* Moved Aside Functions */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Moved Aside Functions"; sourceTree = "<group>"; };
 		5CEC7B9A0DE24E8300C33BFB /* GeneralMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralMath.h; sourceTree = "<group>"; };
+		77DC40A617AE1510000626A2 /* squish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = squish.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* swordedit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swordedit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD79512E1763266E0029CCFE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = ../../../../../../../System/Library/Frameworks/Security.framework; sourceTree = "<group>"; };
-		AD795130176326910029CCFE /* squish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = squish.framework; path = "../swordedit 2 2/squish.framework"; sourceTree = "<group>"; };
 		AD9CA5B8176D8E03004B109A /* NonKeyPanels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonKeyPanels.h; sourceTree = "<group>"; };
 		AD9CA5B9176D8E03004B109A /* NonKeyPanels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonKeyPanels.m; sourceTree = "<group>"; };
 		ADD558001765866D0023C115 /* Main.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
@@ -175,9 +169,8 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				5C675B960CD4219D00F664DE /* OpenGL.framework in Frameworks */,
-				142F1A0910F8765100E69B8D /* BGHUDAppKit.framework in Frameworks */,
+				77DC40A717AE1510000626A2 /* squish.framework in Frameworks */,
 				AD79512F1763266E0029CCFE /* Security.framework in Frameworks */,
-				AD795131176326910029CCFE /* squish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +262,6 @@
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				ADD558001765866D0023C115 /* Main.xib */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -277,9 +269,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD795130176326910029CCFE /* squish.framework */,
+				77DC40A617AE1510000626A2 /* squish.framework */,
 				AD79512E1763266E0029CCFE /* Security.framework */,
-				142F1A0810F8765100E69B8D /* BGHUDAppKit.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -506,7 +497,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				5C00A9130DD5210200C2253D /* Credits.rtf in Resources */,
 				5C00A9200DD5215E00C2253D /* AboutBox.nib in Resources */,
@@ -571,14 +561,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
-			);
-			name = MainMenu.nib;
-			sourceTree = "<group>";
-		};
 		5C00A91E0DD5215E00C2253D /* AboutBox.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -596,11 +578,7 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../swordedit 2 2\"",
+					"$(SRCROOT)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../Library/Frameworks\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../Library/Frameworks\"";
@@ -632,11 +610,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../swordedit 2 2\"",
+					"$(SRCROOT)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../Library/Frameworks\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../Library/Frameworks\"";
