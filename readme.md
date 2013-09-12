@@ -1,6 +1,8 @@
 # Swordedit
 
-Originally developed by Grenadiac in C++ for Windows, Sparkedit's source was given to bobindashadows, who began porting the application to OS X under the new name 'Swordedit'. Since then, the code has changed hands several times but has always remained GPL-licensed. The most recent maintainer of the project is Samuco of MacGamingMods.
+Originally developed by Grenadiac in C++ for Windows, Sparkedit's source was given to bobindashadows,
+who began porting the application to OS X. He handed the project off to Sword, who released the project
+under its new name 'Swordedit'. Since then, Samuco has taken up the reins and continued adding features.
 
 ### License
 
